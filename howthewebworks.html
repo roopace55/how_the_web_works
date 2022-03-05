@@ -1,0 +1,70 @@
+How the Web works Exercise:
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How The Web Works</title>
+</head>
+<body>
+    <h1>How The Web Works</h1>
+    <p>
+        <h3>Part One: Solidify Terminology</h3>
+
+        <b>1. What is  HTTP?</b>
+        <p>A: HTTP stands for Hyper Text Transfer Protocol that governs the data that transfers between client and servers.</p>
+        
+        <b>2. What is URL?</b>
+        <p>A: URL stands for Uniform Resource Locator which is an address for internet resource.</p>
+        
+        <b>3. What is DNS?</b>
+        <p>   A: DNS stands for Domain Name System that takes human-readable URLs and converts them into IP addresses.</p>
+        
+        <b>4. What is a query string?</b>
+        <p>A: A query string is a part of the URL that assigns value to the specified parameters.</p>
+        
+        <b>5. List two HTTP Verbs and their use cases.</b>
+        <p> A: 1. Get - gets data from the servers
+        2. Post - changes data on servers</p>
+        
+        <b>6. What is an HTTP request?</b>
+        <p>A: It is an URL request from a client to the server.</p>
+        
+        <b>7. What is an HTTP response?</b>
+        <p>A: It is a response sent by the server to the client as per their request.</p>
+        
+        <b>8. What is an HTTP header? Give a couple examples of request and response headers you have seen.</b>
+        <p>A: HTTP header provide additional information about the request or response . For example
+            Request Headers: Host, User-Agent, Accept, Cookie, Cache-Control
+            Response Headers: Content-Type, Last-Modified, Set-Cookie, Cache-Control</p>
+        
+        <b>9. What happens when you type a “http://somesite.com/some/page.html” in a browser?</b>
+        <p>A: 1. The browser uses DNS to find the IP address for this site.
+            2. The request is made to the IP address.
+            3. The server sends a response.
+            4. The browser makes a DOM from that response.</p>
+        
+        
+        <h3>PART TWO: PRACTICE TOOLS</h3>
+        
+        <b>1. Using curl, make a GET request to the icanhazdadjoke.com API to find all jokes involving the word “pirate”</b>
+        
+        <p>A: curl https://icanhazdadjoke.com/search\?term\=pirate</p>
+        
+       <b> 2. Use dig to find what the IP address is for icanhazdadjoke.com</b>
+        <p>A: ;; ANSWER SECTION:</p>
+            <p>icanhazdadjoke.com.	300	IN	A	104.21.37.176</p>
+            <p>icanhazdadjoke.com.	300	IN	A	172.67.211.64</p>
+
+        <b>Make a simple web page and serve it using python3 -m http.server. Visit the page in a browser.</b>
+        <p>rupeshbasnet@Roops-MacBook-Pro How_the_web_works % python3 -m http.server</p>
+        <b>Hosting this page at:</b>
+        <p>http://127.0.0.1:8000/howthewebworks.html?</p>
+    </p>
+    
+</body>
+</html>
